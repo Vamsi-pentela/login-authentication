@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div  class="login-container">
+        <div class="login-box">
+            <div class="avatar">
+                <img src="user.png (2).jpeg" alt="Avatar">
+            </div>
+            <form action="/login" method="post" >
+                <div class="input-group">
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+
+                <div class="actions">
+                    <a href="/register" class="create-account">Create Account?</a>
+                </div>
+
+                 
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        const username = document.getElementById("username");
+        const password=document.getElementById("password");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault(); 
+    
+            const username = usernameInput.value.trim();
+            const password = passwordInput.value.trim();
+            
+           
+            if (username.length < 3 || password.length < 6) {
+                alert("you pass word is not strong ");
+            }
+        });
+    
+    </script>
+</body>
+</html>
